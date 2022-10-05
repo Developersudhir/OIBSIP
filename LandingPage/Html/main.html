@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing_page</title>
+    <link rel="stylesheet" href="../Css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+</head>
+
+<body onload="Showtime()">
+    <div class="hstrip">
+        <h2>WelCome On Our Landing Page..</h2><P></P>
+    </div>
+    <div class="disimg"><div class="tech1"><img src="../img/Html logo.png" alt="Html Logo"> <h2>The first version of HTML was written by Tim Berners-Lee in 1993. Since then, there have been many different versions of HTML.
+        Inventor: Tim Berners-Lee
+        Developed by: World Wide Web Consortium</h2><p>It stands strong and true, resilient and universal as the markup you write. It shines as bright and as bold as the forward-thinking, dedicated web developers you are. It's the standard's standard, a pennant for progress. And it certainly doesn't use tables for layout.</p></div>
+        <div class="tech2"><img src="../img/Csslogo.png" alt="Css Logo"><h2>CSS was first proposed by Håkon Wium Lie on 10 October 1994. At the time, Lie was working with Tim Berners-Lee at CERN.Developed by: World Wide Web Consortium ...</h2><p>"Stands for "Cascading Style Sheet." Cascading style sheets are used to format the layout of Web pages. They can be used to define text styles, table sizes, and other aspects of Web pages that previously could only be defined in a page's HTML.CSS helps Web developers create a uniform look across several pages of a Web site.</p></div>
+        <div class="tech3"><img src="../img/Jslogo.png" alt="JavaScript Logo"><h2>JavaScript was invented by Brendan Eich in 1995. It was developed for Netscape 2</h2><p>became the ECMA-262 standard in 1997. After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for the Firefox browser. Mozilla's latest version was 1.8</p></div>
+        <div class="tech4"><img src="../img/Pythonlogo.jfif" alt="Python Logo" id="spi"><h2>Python was created by Guido van Rossum, and first released on February 20, 1991.
+            Company: Python Software Foundation</h2><p>There is a fact behind choosing the name Python. Guido van Rossum was reading the script of a popular BBC comedy series "Monty Python's Flying Circus". It was late on-air 1970s.Van Rossum wanted to select a name which unique, sort, and little-bit mysterious. So he decided to select naming Python after the "Monty Python's Flying Circus" for their newly created programming language.</p></div>
+    </div>
+    <footer>
+        <p>All &copy; 2022 Are Reserved.  Develope By Sudhir Adhe
+        </p>
+    </footer>
+    <script>
+        function Showtime(){
+            const now=new Date();
+            let h=now.getHours();
+            let m=now.getMinutes();
+            let s=now.getSeconds();
+            let d=now.getDate();
+            let y=now.getFullYear();
+            let mo=now.getMonth();
+            m=writezero(m);
+            s=writezero(s);
+        document.querySelector('p').innerHTML = "Time => "+h+":"+m+":"+s+" Date => "+d+"/"+mo+"/"+y;
+        
+        setTimeout(Showtime,1000);
+        }
+        function writezero(i)
+        {
+            if(i<10){
+                i="0"+i
+            };
+            return i;
+        }
+    </script>
+</body>
+
+</html>
