@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../Css/index.css">
+
+</head>
+
+<body>
+    <h1><u>My Portfolio</u></h1>
+    <button class="scroll" id="scr"><i> &UpArrow;</i></button>
+    <div class="main">
+        
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#cv">My C.V.</a></li>
+                <li><a href="#skill">Skill</a></li>
+            </ul>
+        </div>
+        <div class="remainScreen">
+
+            <div class="head">
+                <h2>I Am Sudhir Adhe.</h2>
+                <p>I Am Web-Devloper,Programmer.Want To be Part Of Your Organisation And Work with You.Student Of
+                    Bsc.(C.S.) 3<sup>rd</sup> Year. This Is My Portfolio. I Have Created this For Telling About Me.</p>
+            </div>
+            <div class="disimg"><img src="../img/img1.jpg" alt="Image"></div>
+            <div class="bt"><button class="btn"><a href="../Data/MyCV.pdf" download="Sudhir(C.V.).pdf">Download My
+                        C.V.</a></button> <button class="btn">Read</button></div>
+        </div>
+
+    </div>
+    <div class="about" id="about">
+        <h2><u>About Me</u></h2>
+        <div class="ab">
+            <p>I'm Curious About Technology. I Am Very Enthusiastic Person.</p>
+            <p>Hardworking about My Work.Have Knowledge of Some Programming Language's Which Is Mentioned In Skill.
+            </p>
+            <p>For Reading C.V. Click On My C.V..</p>
+        </div>
+    </div>
+    <div class="cv" id="cv">
+        <h2><u> My C.V.</u></h2>
+        <div class="c">
+            <h4>Name:- Sudhir Sanjay Adhe</h4>
+            <h4>Mail_id:- sudhiradhe001@gmail.com</h4>
+            <h4>Contact_No.:- 7875287879</h4>
+            <h4>Degree:- Bsc.C.S. 3 <sup>rd</sup>Year </h4>
+            <h4>College Name:- MIT Cidco,Aurangabad.</h4>
+            <h4>Programming Language Known :- Python , Java , C , HTML , CSS , JavaScript , PHP</h4>
+            <h4>Other Technology :- Database (MySQL), Knowledge of Linux O.S.</h4>
+
+        </div>
+    </div>
+    <div class="skill" id="skill">
+        <h2><u>Skill</u></h2>
+        <div class="s">
+            <h3>HTML:-<span>100%</span>
+                <div class="box seventyp"></div>
+            </h3>
+            <h3>CSS:-<div class="box sixtp"></div>
+            </h3>
+            <h3>JavaScript:-<div class="box sixtp"></div>
+            </h3>
+            <h3>PHP:- <div class="box sixtp"></div>
+            </h3>
+            <h3>Python:- <div class="box sixtp"></div>
+            </h3>
+            <h3>Java:- <div class="box seventyp"></div>
+            </h3>
+            <h3>C:- <div class="box sixtp"></div>
+            </h3>
+        </div>
+    </div>
+
+    <script>
+        $scroll = document.querySelector('.scroll');
+        $scroll.addEventListener('click', function () {
+
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            })
+        });
+    </script>
+    <footer>&copy; 2022 MyPortfolio Are Reserverd - Sudhir Adhe  </footer>
+</body>
+
+
+</html>
