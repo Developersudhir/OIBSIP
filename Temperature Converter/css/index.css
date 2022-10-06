@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  margin-top: 3%;
+  color: rgba(32, 243, 32, 0.973);
+  text-shadow: 0px 3px 3px rgb(250, 221, 221);
+}
+body {
+  background-color: rgb(231, 18, 231);
+  color: azure;
+  font-family: "Trirong", serif;
+}
+.panel {
+  /* border:2px solid white; */
+  width: 65%;
+  height: 40vh;
+  text-align: center;
+  margin-left: 20%;
+  margin-top: 10%;
+  background-color: rgba(243, 64, 88, 0.822);
+  box-shadow: 2px 18px 18px white;
+  cursor: pointer;
+  padding: 5px;
+}
+h2 {
+  margin-top: 1%;
+  text-shadow: 0px 3px 3px rgb(250, 221, 221);
+  color: rgb(218, 252, 69);
+}
+.panel:hover {
+  transform: scale(1.1);
+  transition: 0.15s;
+}
+form {
+  margin-top: 5%;
+}
+label {
+  font-size: 1.3rem;
+  margin-left: 2%;
+  color: rgb(136, 241, 75);
+}
+input {
+  margin-top: 10%;
+  margin-left: 1%;
+  font-size: 1.2rem;
+  border-radius: 16px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+input:focus {
+  border-color: coral;
+}
+footer {
+  margin-top: 19%;
+  text-align: center;
+  background-color: gray;
+  font-size: 1.3rem;
+  font-family: "Trirong", serif;
+  text-shadow: 3px 3px 3px #ababab;
+  color: azure;
+  border: 0.2px solid white;
+  height: 10vh;
+}
+footer p {
+  margin-top: 2%;
+}
