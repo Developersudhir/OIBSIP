@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Webapp</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <h1>Calculator -Level2=>Task1</h1><div class="container">
+    <div class="panel">
+            <input type="text" placeholder="0" id="screen">
+            <button class="btn cancel">C</button>
+            <div class="row">
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">+</button>
+            </div>
+            <div class="row">
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">-</button>
+            </div>
+            <div class="row">
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">*</button>
+            </div>
+            <div class="row">
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+                <button class="btn">/</button>
+                <button class="btn equal">=</button>
+            </div>
+        </div>
+    </div>
+<script>
+        let buttons=document.querySelectorAll('.btn');
+        let result="";
+        Array.from(buttons).forEach((button)=>{
+            button.addEventListener('click',(e)=>{
+                if(e.target.innerHTML =='C'){
+                    result="";
+                    document.getElementById('screen').value=result;
+                }
+                else if(e.target.innerHTML=='='){
+                    result=eval(result);
+                    document.getElementById('screen').value=result;
+
+                }
+                else{
+                    result=result+e.target.innerHTML;
+                    document.getElementById('screen').value=result;
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>
